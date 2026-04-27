@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>是男人就撑过100波</title>
+  </head>
+  <body>
+    <div id="app">
+      <div id="game-shell">
+        <div id="game-canvas" aria-label="是男人就撑过100波游戏画面"></div>
+
+        <div class="hud" data-state="menu">
+          <div class="hud__cluster hud__cluster--left">
+            <div class="hud-card hud-card--score">
+              <span class="hud-label">分数</span>
+              <strong id="hud-score">0</strong>
+            </div>
+            <div class="hud-card hud-card--wave">
+              <span class="hud-label">波次</span>
+              <strong id="hud-wave">1</strong>
+            </div>
+            <div class="hud-card hud-card--weapon">
+              <span class="hud-label">火力</span>
+              <strong id="hud-weapon">Lv.1</strong>
+            </div>
+          </div>
+
+          <div class="hud__cluster hud__cluster--right">
+            <div class="audio-panel" aria-label="音量控制">
+              <label>
+                <span>音乐</span>
+                <input id="music-volume" type="range" min="0" max="100" value="78" />
+              </label>
+              <label>
+                <span>音效</span>
+                <input id="sfx-volume" type="range" min="0" max="100" value="84" />
+              </label>
+            </div>
+            <button id="pause-button" class="icon-button" type="button" aria-label="暂停">
+              <span></span><span></span>
+            </button>
+          </div>
+
+          <div class="hud__bottom">
+            <div class="meter meter--hp">
+              <div class="meter__top">
+                <span>装甲</span><strong id="hud-hp">100</strong>
+              </div>
+              <div class="meter__track"><i id="hud-hp-bar"></i></div>
+            </div>
+            <button id="burst-button" class="burst-button" type="button" aria-label="释放星环脉冲">
+              <span class="burst-button__ring"></span>
+              <span class="burst-button__text">脉冲</span>
+            </button>
+            <div class="meter meter--charge">
+              <div class="meter__top">
+                <span>星能</span><strong id="hud-charge">0%</strong>
+              </div>
+              <div class="meter__track"><i id="hud-charge-bar"></i></div>
+            </div>
+          </div>
+        </div>
+
+        <section id="menu-panel" class="menu-panel">
+          <div class="menu-panel__glow"></div>
+          <p class="eyebrow">SURVIVE 100 WAVES</p>
+          <h1>是男人就撑过100波</h1>
+          <p class="tagline">穿越霓虹云海，别被碰到。火力会升级，也会在受击后归零。</p>
+          <div class="menu-panel__actions">
+            <button id="start-button" class="primary-button" type="button">开始挑战</button>
+            <button id="restart-button" class="secondary-button" type="button">重新开始</button>
+          </div>
+          <div class="control-strip" aria-label="操作方式">
+            <span>方向键/WASD</span>
+            <span>拖动</span>
+            <span>空格脉冲</span>
+          </div>
+          <div class="leaderboard" aria-label="积分榜">
+            <div class="leaderboard__title">积分榜</div>
+            <ol id="leaderboard-list">
+              <li>暂无战绩</li>
+            </ol>
+          </div>
+        </section>
+
+        <aside id="story-panel" class="story-panel" aria-live="polite">
+          <span id="story-speaker">星港塔台</span>
+          <p id="story-text">第七码头失联，星翼一号待命。</p>
+        </aside>
+
+        <div id="toast" class="toast" aria-live="polite"></div>
+      </div>
+    </div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>

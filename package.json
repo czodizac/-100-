@@ -1,0 +1,21 @@
+{
+  "name": "survive-100-waves",
+  "version": "1.0.0",
+  "description": "一个用 Phaser 和 Codex GPT-5.5 协作制作的浏览器弹幕飞机游戏。",
+  "private": false,
+  "type": "module",
+  "license": "MIT",
+  "scripts": {
+    "dev": "vite --host 0.0.0.0",
+    "build": "tsc && vite build",
+    "preview": "vite preview --host 0.0.0.0"
+  },
+  "dependencies": {
+    "phaser": "^3.90.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-legacy": "^6.1.1",
+    "typescript": "^5.8.3",
+    "vite": "^6.3.4"
+  }
+}
