@@ -1,4 +1,4 @@
-Music assets are from OpenGameArt and marked CC0.
+Music is streamed from OpenGameArt at runtime. The listed sources are marked CC0 on OpenGameArt.
 
 - `chiptune-battle-loop.ogg`: "Chiptune Battle Music" by cynicmusic.
   Source: https://opengameart.org/content/chiptune-battle-music

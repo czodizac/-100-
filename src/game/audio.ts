@@ -24,12 +24,12 @@ interface ExternalTrack {
 }
 
 const EXTERNAL_TRACKS: Record<string, ExternalTrack> = {
-  stage1: { src: "/audio/chiptune-battle-loop.ogg", rate: 1, gain: 0.56 },
-  stage2: { src: "/audio/synthwave-house-loop.ogg", rate: 1.02, gain: 0.62 },
-  stage3: { src: "/audio/fast-fight-loop.wav", rate: 1.04, gain: 0.58 },
-  stage4: { src: "/audio/pulsar.wav", rate: 1.08, gain: 0.64 },
-  stage5: { src: "/audio/synthwave-house-loop.ogg", rate: 1.16, gain: 0.66 },
-  boss: { src: "/audio/boss-8.ogg", rate: 1.04, gain: 0.76 }
+  stage1: { src: "https://opengameart.org/sites/default/files/battle_music_01-loop.ogg", rate: 1, gain: 0.56 },
+  stage2: { src: "https://opengameart.org/sites/default/files/synthwavehouse_0.ogg", rate: 1.02, gain: 0.62 },
+  stage3: { src: "https://opengameart.org/sites/default/files/fight_looped.wav", rate: 1.04, gain: 0.58 },
+  stage4: { src: "https://opengameart.org/sites/default/files/Pulsar.wav", rate: 1.08, gain: 0.64 },
+  stage5: { src: "https://opengameart.org/sites/default/files/synthwavehouse_0.ogg", rate: 1.16, gain: 0.66 },
+  boss: { src: "https://opengameart.org/sites/default/files/Boss%208_0.ogg", rate: 1.04, gain: 0.76 }
 };
 
 const MUSIC_PROFILES: MusicProfile[] = [
